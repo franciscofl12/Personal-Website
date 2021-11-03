@@ -155,6 +155,26 @@ a {
   display: none;
 }
 
+#btnUp {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#btnUp:hover {
+  background-color: aqua; /* Add a dark-grey background on hover */
+}
+
 /*-----------------INFO STYLE-----------------*/
 .info__sec {
   background: #000;
@@ -193,7 +213,7 @@ a {
   left: 0;
   color: #fff;
   background-color: rgba(0,0,0);
-  width: 60%;
+  width: 80%;
   height: 100%;
   padding: 5px;
 }
@@ -247,7 +267,7 @@ a {
     justify-content: space-between;
   }
   .info__sec {
-    width: 32%;
+    width: 40%;
   }
   .info__title {
     font-size: 30px;
@@ -260,7 +280,8 @@ a {
     flex-wrap: wrap;
   }
   .topic__sec {
-    width: 49%;
+    width: 80%;
+    height: 150px;
   }
   .footer .social [class^="icon-"] {
     margin: 0 10px;
@@ -274,11 +295,15 @@ a {
     font-size: 40px;
   }
 
+  .topic__sec {
+    height: 300px;
+  }
+
 }
 
 @media(min-width:1024px) {  
   .container {
-    width: 1000px;
+    width: 1024px;
   }
   .section__title {
     font-size: 50px;
@@ -305,6 +330,9 @@ a {
   #banner__title {
     font-size: 60px;
   }
+  .topic__sec {
+    height: 300px;
+  }
   .banner__txt {
     font-size: 25px;
   }
@@ -328,13 +356,17 @@ a {
 
 @media(min-width:1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
   }
   .logo {
     font-size: 60px;
   }
   .banner .container {
     top: 40%;
+  }
+
+  .topic__sec {
+    height: 340px;
   }
 
 }
