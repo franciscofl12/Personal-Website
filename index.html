@@ -13,6 +13,8 @@
     <!-- Icons FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">      
     <link href="css/styles.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <header class="header">
@@ -36,7 +38,7 @@
     </div>
 </header>
 <button onclick="topFunction()" id="btnUp" title="Go to top"><i class="fas fa-level-up-alt"></i></button>
-<div class="banner">
+<div data-aos="fade-up" class="banner">
     <img src="img/banner.png" alt="">
     <div class="container">
         <img src="img/ffl.png" alt="profile-image" class="profile"/>
@@ -51,28 +53,26 @@
                 <h2 class="section__title">Studies</h2>
                 <div class="col-12">
                     <div class="row d-flex m-auto justify-content-center">
-                        <div class="col-lg-5 col-md-5 col-sm-12 card topic__sec">
+                        <div data-aos="fade-up" class="col-lg-5 col-md-5 col-sm-12 card topic__sec">
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">DAW (Degree of Development Web Applications)</h2>
                                 <div class="topic__txt">2019-2021.</div>
                             </div>
                         </div>
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
+                        <div data-aos="fade-up" class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">B2 Cambridge Assigment</h2>
                                 <div class="topic__txt">2019.
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
-                            
+                        <div data-aos="fade-up" class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Upper secondary education</h2>
                                 <div class="topic__txt">2017-2019.</div>
                             </div>
                         </div>
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
-                            
+                        <div data-aos="fade-up" class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Blockchain courses imparted by Udemy</h2>
                                 <div class="topic__txt">2021.</div>
@@ -83,7 +83,7 @@
             <section class="row topic d-flex m-auto justify-content-center">
                 <h2 class="section__title">Skills</h2>
                 <div class="col-12">
-                    <div class="row d-flex m-auto justify-content-center">
+                    <div data-aos="fade-up" class="row d-flex m-auto justify-content-center">
                         <div class="col-lg-5 col-md-5 col-sm-12 card topic__sec">
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">HTML/CSS</h2>
@@ -96,17 +96,14 @@
                                 <div class="topic__txt">Designing websites for 2 years.
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
-                            
+                        </div>                     
+                        <div data-aos="fade-up" class="card col-lg-5 col-md-5 col-sm-12 topic__sec">                         
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Bootstrap</h2>
                                 <div class="topic__txt">Building websites for 3 years with bootstrap.</div>
                             </div>
                         </div>
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
-                            
+                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">    
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Javascript | Php | Java</h2>
                                 <div class="topic__txt">Learning it on previous years, in highschool and autodidact</div>
@@ -114,15 +111,13 @@
                         </div>
                     </div>
                     <div class="row d-flex m-auto justify-content-center">
-                        <div class="col-lg-5 col-md-5 col-sm-12 card topic__sec">
-                            
+                        <div data-aos="fade-up" class="col-lg-5 col-md-5 col-sm-12 card topic__sec">   
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Blockchain Ecosystem</h2>
                                 <div class="topic__txt">Learning it autodidact and making things on Python and Solidity.</div>
                             </div>
                         </div>
-                        <div class="card col-lg-5 col-md-5 col-sm-12 topic__sec">
-                            
+                        <div data-aos="fade-up" class="card col-lg-5 col-md-5 col-sm-12 topic__sec">    
                             <div class="topic__descripcion">
                                 <h2 class="topic__title">Smart Contracts</h2>
                                 <div class="topic__txt">Making smart contracts for a year in solidity.
@@ -134,17 +129,17 @@
             </section>
             <section class="row info d-flex m-auto justify-content-center">
                 <a href="hireme"></a><h2 class="section__title">Hire Me</h2>
-                <div class="card col-lg-3 col-md-3 col-sm-12 info__sec">
+                <div data-aos="fade-up" class="card col-lg-3 col-md-3 col-sm-12 info__sec">
                     <a href="https://github.com/franciscofl12"><img src="img/github.png" alt="" class="info__img"></a>
                     <h2 class="info__title">GitHub</h2>
                     <p class="info__txt">Website where I upload all my projects.</p>
                 </div>
-                <div class="card col-lg-3 col-md-3 col-sm-12 info__sec">
+                <div data-aos="fade-up" class="card col-lg-3 col-md-3 col-sm-12 info__sec">
                     <a href="https://www.linkedin.com/in/francisco-flores-lucena-5793a0212/"><img src="img/linkedin.png" alt="" class="info__img"></a>
                     <h2 class="info__title">Linkedin</h2>
                     <p class="info__txt">Find more personal information about me!</p>
                 </div>
-                <div class="card col-lg-3 col-md-3 col-sm-12 info__sec">
+                <div data-aos="fade-up" class="card col-lg-3 col-md-3 col-sm-12 info__sec">
                     <a href="https://www.behance.net/franciscofl12"><img src="img/book.png" alt="" class="info__img"></a>
                     <h2 class="info__title">Portfolio</h2>
                     <p class="info__txt">More interesting projects that I have done!</p>
@@ -155,7 +150,7 @@
 </main>
 <footer class="footer">
     <div class="container">
-        <div class="social">
+        <div data-aos="fade-up" class="social">
             <a href="https://twitter.com/franciscofl12_" class="icon-twitter"></a>
             <a href="https://www.linkedin.com/in/francisco-flores-lucena-5793a0212/" class="icon-social-linkedin"></a>
             <a href="https://github.com/franciscofl12" class="icon-social-github"></a>
@@ -168,6 +163,9 @@
 <script src="js/javascript.js"></script>
 <script src="js/borrarescribir.js"></script>
 <script src="js/btnup.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
