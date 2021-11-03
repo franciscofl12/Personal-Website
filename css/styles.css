@@ -163,8 +163,8 @@ a {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: white; /* Set a background color */
-  color: black; /* Text color */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -173,6 +173,7 @@ a {
 
 #btnUp:hover {
   background-color: aqua; /* Add a dark-grey background on hover */
+  color: black;
 }
 
 /*-----------------INFO STYLE-----------------*/
@@ -180,6 +181,8 @@ a {
   background: #000;
   color: #fff;
   padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 30px;
 }
 
