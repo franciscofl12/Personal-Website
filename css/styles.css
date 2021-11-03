@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 40px;
   color: #000;
 }
-.contenedor {
+.container {
   margin: auto;
   width: 99%;
 }
@@ -32,7 +32,7 @@ a {
 .header {
   height: 60px;
 }
-.header .contenedor {
+.header .container {
   display: flex;
   justify-content: space-between;
 }
@@ -62,7 +62,7 @@ a {
 }
 
 .nav li a:hover {
-  background-color:#434343;
+  background-color:aqua;
 }
 
 .nav li ul {
@@ -97,7 +97,7 @@ a {
   color: #fff;
 }
 .menu__link:hover, .select {
-  background: white;
+  background: aqua;
   color: #000;
 }
 .mostrar {
@@ -107,6 +107,33 @@ a {
 
 /*--------------BANNER STYLE--------------*/
 
+#banner__title {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 2em;
+  color: black;
+}
+#banner__title:last-of-type {
+  animation: type 0.33s infinite;
+}
+@keyframes type{
+  to { opacity: .0; }
+}
+
+.profile-card {
+  padding-bottom: 20px;
+}
+
+.profile {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+}
+
 .banner {
   margin-top: -60px;
   position: relative;
@@ -114,7 +141,7 @@ a {
   margin-bottom: 20px;
 }
 
-.banner .contenedor {
+.banner .container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -136,21 +163,36 @@ a {
   margin-bottom: 30px;
 }
 
+.info__sec:hover {
+  color:aqua;
+}
+
 /*-----------------TOPIC STYLE-----------------*/
+
+.card {
+  border: none;
+}
+
+.topic__descripcion:hover {
+  color:aqua;
+}
+
 .topic__sec {
   position: relative;
   margin-bottom: 30px;
 }
+
 .topic__descripcion {
   position: absolute;
   top: 0;
   left: 0;
   color: #fff;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0);
   width: 60%;
   height: 100%;
   padding: 5px;
 }
+
 .topic__title {
   font-size: 25px;
   margin: 5px 0;
@@ -186,7 +228,7 @@ a {
   .logo {
     font-size: 40px;
   }
-  .banner__title {
+  #banner__title {
     font-size: 30px;
     margin: 5px 0;
   }
@@ -198,7 +240,6 @@ a {
   .info, .topic {
     display: flex;
     justify-content: space-between;
-    margin-top: -90px;
   }
   .info__sec {
     width: 32%;
@@ -212,7 +253,6 @@ a {
   }
   .topic {
     flex-wrap: wrap;
-    margin-top: 0;
   }
   .topic__sec {
     width: 49%;
@@ -222,16 +262,17 @@ a {
   }
 }
 @media(min-width:768px) {  
-  .banner__title {
+  #banner__title {
     font-size: 50px;
   }
   .topic__title {
     font-size: 40px;
   }
+
 }
 
 @media(min-width:1024px) {  
-  .contenedor {
+  .container {
     width: 1000px;
   }
   .section__title {
@@ -256,14 +297,11 @@ a {
     color: #fff;
     background: #000;
   }
-  .banner__title {
+  #banner__title {
     font-size: 60px;
   }
   .banner__txt {
     font-size: 25px;
-  }
-  .info {
-    margin-top: -120px;
   }
   .info__sec {
     padding: 30px;
@@ -284,17 +322,15 @@ a {
 }
 
 @media(min-width:1280px) {
-  .contenedor {
+  .container {
     width: 1200px;
   }
   .logo {
     font-size: 60px;
   }
-  .banner .contenedor {
+  .banner .container {
     top: 40%;
   }
-  .info {
-    margin-top: -220px;
-  }
+
 }
 
