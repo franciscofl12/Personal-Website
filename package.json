@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/franciscofl12/Personal-Website#readme",
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "swiper": "^8.0.6"
   }
 }
